@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="text-center p-4 bg-gray-800 text-white">
       <p className="text-sm md:text-base lg:text-lg">
-        &copy; {currentYear} Online IDE
+        &copy; {currentYear} CodeSphere
       </p>
     </div>
   );

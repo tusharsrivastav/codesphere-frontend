@@ -99,7 +99,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
             to="/"
             className="text-2xl font-bold tracking-wide hover:text-gray-300 transition-colors duration-200"
           >
-            Online IDE
+            CodeSphere
           </Link>
 
           <nav className="hidden md:flex space-x-6">
