@@ -105,7 +105,7 @@ const CodeEditor = ({
     if (code.length === 0) return;
     setLoadingAction("run");
     try {
-      const response = await fetch(apiEndpoint, {
+      const response = await fetch(`${import.meta.env.VITE_NVIDIA_NIM_APP_API_URL}/get-output`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -316,7 +316,7 @@ const CodeEditor = ({
     const username = localStorage.getItem("username");
 
     const response = await fetch(
-      `${import.meta.env.VITE_BACKEND_API_URL}/api/runCode/count`,
+      "/api/runCode/count",
       {
         method: "POST",
         headers: {
@@ -335,7 +335,7 @@ const CodeEditor = ({
     const username = localStorage.getItem("username");
 
     const response = await fetch(
-      `${import.meta.env.VITE_BACKEND_API_URL}/api/generateCode/count`,
+      "/api/generateCode/count",
       {
         method: "POST",
         headers: {
@@ -357,7 +357,7 @@ const CodeEditor = ({
     const username = localStorage.getItem("username");
 
     const response = await fetch(
-      `${import.meta.env.VITE_BACKEND_API_URL}/api/refactorCode/count`,
+      "/api/refactorCode/count",
       {
         method: "POST",
         headers: {
